@@ -29,6 +29,8 @@
     cursor: pointer;
     transition: 0.5s;
     background-color: white;
+    text-decoration: none;
+    color: black;
 
 
 }
