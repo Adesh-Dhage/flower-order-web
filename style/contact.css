@@ -305,15 +305,16 @@
 
     .website-name{
         margin-bottom: 1rem;
-        text-align:start;
+        text-align:center;
         order: 1;
+        font-size: 20px;
     }
     .search-bar{
         order: 2;
     }
 
     .search-bar input {
-        width: auto;
+        width: 100%;
         margin-left:10px ;
     }
 
