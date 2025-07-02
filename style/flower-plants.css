@@ -1,0 +1,541 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.Navbar{
+    height: 70px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center ;
+    border-bottom: 2px solid black;
+    position: fixed;
+    z-index: 2;
+}
+.website-name{
+    font-size: 35px;
+}
+.search-bar{
+    display: flex;
+    position: relative;
+    
+}
+.search-bar input{
+    height: 30px;
+    width: 40vw;
+    padding: 5px 20px;
+    border-radius: 12px;
+
+
+    
+}
+.icon{
+    position: absolute;
+    right: 0;
+    top:auto;
+    padding-right: 35px;
+    margin-top:15px;
+
+}
+#icon-bar{
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#icon-bar a{
+    font-size: 25px;
+    margin-left: 25px;
+    transition: 0.5s linear;
+    cursor: pointer;
+}
+#icon-bar a:hover{
+    color: palevioletred;
+
+}
+.menu-btn {
+            cursor: pointer;
+            display: inline-block;
+            font-size: 25px;
+            margin: 20px;
+            
+        }
+        .sidebar a{
+            display: block;
+            padding: 0 6px;
+            text-decoration: none;
+            color:black;
+            font-size: 20px;
+            margin-left: 30px;
+            transition: 0.5s;
+        }
+         .sidebar a:hover{
+            color:rgb(239, 12, 87);
+            border-bottom: 2px solid rgb(222, 16, 85);
+            border-radius: 12px;
+            
+        }
+
+        /* Sidebar styles */
+        .sidebar {
+            visibility: hidden;
+            opacity: 0;
+            transform: translateY(-100%);
+            transition: transform 0.4s ease, opacity 0.4s ease, visibility  0.4s;
+
+            position:fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            padding: 20px 0;
+            background-color: white;
+        }
+
+        .menu-btn:hover .sidebar {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0);
+            transition-delay: 0.5s;
+        }
+
+
+/* page   */
+.page{
+    height:2000px ;
+}
+#main-image{
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+
+}
+#main-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#info{
+    height: 200px;
+    width: 100%;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#info h1{
+    margin-left: 20px;
+    font-size: 45px;
+    color: palevioletred;
+}
+#info p{
+    margin-left: 20px;
+    font-size: 25px;
+}
+#card-container{
+    height:1600px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.card{
+    height: 450px;
+    width: 340px;
+    margin: 10px;
+    border-radius: 12px;
+    border: 1px solid whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img-box{
+    height: 60%;
+    width: 95%;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 10px;
+    border: 0.5px solid palevioletred;
+}
+.img-box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.4s linear;
+}
+.img-box img:hover{
+    transform: scale(1.1);
+
+}
+.img-box span{
+    background-color:palevioletred;
+    color: black;
+    position: absolute;
+    top:2px;
+    left: 1px;
+    font-size: 17px;
+    display: inline-block;
+}
+.offer{
+    height: 10px;
+    width: 106px;
+    color: black;
+    position: absolute;
+    top:2px;
+    right: 1px;
+    display: inline-block;
+
+
+}
+.other-information{
+    height: 40%;
+    width: 95%;
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.other-info{
+    display: flex;
+    flex-direction:column;
+    gap: 10px;
+}
+.other-info h2{
+    font-size: 18px;
+}
+.btn{
+    padding: 8px 90px;
+    background-color: #fff;
+    font-size: 20px;
+    border-radius: 6px;
+    border: 2px solid palevioletred;
+    color: white;
+    background-color: palevioletred;
+    cursor: pointer;
+    transition: 0.5s linear;
+}
+
+.btn:hover{
+    background-color: white;
+    color: palevioletred;
+    border: 2px solid palevioletred;
+    
+
+}
+.other-info2{
+    height: 1250px;
+    width: 100%;
+}
+.other-info2 p{
+    font-size: 20px;
+}
+.infor1{
+    height: 250px;
+    width: 100%;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.infor2{
+    height: 250px;
+     line-height: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.infor3{
+    height: 250px;
+     line-height: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.infor4{
+    height: 250px;
+     line-height: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.infor5{
+    height: 250px;
+     line-height: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+
+#footer{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(27, 26, 26);
+    color: white;
+}
+#resource{
+    height: 95%;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+#connect{
+    height: 95%;
+    width: 300px;
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    font-size: 20px;
+}
+#connect-icons {
+    height: 40px;
+    width: 100%;
+}
+#connect-icons a{
+    margin-left: 20px;
+    font-size: 20px;
+}
+#need-help{
+    margin-top: 40px;
+    height: 95%;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    font-size:20px;
+}
+
+
+
+
+
+
+/* --- Media Query for Mobile (0px to 480px) --- */
+@media screen and (max-width: 480px) {
+    /* Navbar adjustments */
+    .Navbar {
+        flex-direction:row;
+        height: auto;
+        padding: 15px 10px;
+        gap: 15px;
+    }
+
+    .search-bar {
+        width: 40%;
+    }
+
+    .search-bar input {
+        width: 100%;
+        box-sizing: border-box; /* Ensures padding doesn't affect the final width */
+    }
+
+    .icon {
+        margin-top: 10px;
+        padding-right: 15px;
+    }
+
+    #icon-bar {
+        text-align: center;
+        display: flex;
+    }
+
+    #icon-bar a {
+        font-size: 17px;
+    }
+    .menu-btn{
+        font-size: 12px;
+    }
+
+    /* Page adjustments */
+    .page{
+        display: flex;
+        flex-direction: column;
+        height: 730vh;
+        
+    }
+    #main-image {
+        height: 180px;
+        width: 100%;
+        overflow: hidden;
+    }
+    #main-image img{
+        height: 100%;
+        width: 100%;
+        object-fit: fill;
+    }
+
+    #info {
+        height: auto;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    #info h1 {
+        font-size: 36px;
+        margin-left: 0;
+    }
+
+    #info p {
+        font-size: 20px;
+        margin-left: 0;
+    }
+    .card-container{
+         height:auto;
+         width: 100%;
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-evenly;
+         position: relative;
+         background-color: black;
+    }
+
+    .card {
+        width: 100%; /* Make cards stack vertically */
+        margin:10px;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .other-info2 {
+        margin-left: 0;
+    }
+    .other-info2 p{
+        font-size: 15px;
+    }
+
+    /* Footer adjustments */
+    #footer {
+        flex-direction: row;
+        text-align: center;
+        gap: 30px;
+    }
+
+    #resource, #connect, #need-help {
+        width: 90%;
+        margin-top: 0;
+        font-size: 15px;
+    }
+}
+/* 
+        margin-top: 0;
+    }
+} */
+
+
+/* --- Media Query for Tablets (481px to 768px) --- */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    /* Remove fixed heights to allow content to flow naturally */
+    .page, #card-container, .other-info2, #footer, #info {
+        height: auto;
+    }
+
+    /* Adjust Navbar for smaller screens */
+    .Navbar {
+        /* flex-wrap: wrap; */
+        height: auto;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .website-name {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .search-bar {
+        width: 75%;
+        order: 2;
+    }
+
+    #icon-bar {
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        gap: 20px;
+        order: 3;
+    }
+
+    #icon-bar a {
+        margin-left: 0;
+    }
+
+    /* Adjust main content layout */
+    #info {
+        padding: 20px;
+        text-align: center;
+    }
+
+    #info h1, #info p {
+        margin-left: 0;
+    }
+
+    #main-image {
+        height: 250px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    #main-image img {
+        height: 250px;
+        width: 100%;
+        object-fit:fill;
+    }
+
+
+    /* .card {
+      
+        width: calc(50% - 20px);
+    } */
+
+    .other-info2 {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    /* Adjust footer layout */
+    #footer {
+        flex-wrap: wrap;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    #resource, #connect, #need-help {
+        width: 45%;
+        margin-top: 0;
+    }
+}
+
+
