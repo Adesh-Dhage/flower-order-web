@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #fff0f6;
+}
+
+/*navbar{
+    height: 70px;
+    width: 100%;
+    background-color:white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+}
+#website-name{
+    font-size: 50px;
+    font-weight: 600;
+    color: palevioletred;
+}
+#navlist a{
+    margin-left: 20px;
+    font-size: 25px;
+    padding: 3px 6px;
+    font-weight: 300;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+
+
+}
+#navlist a:hover{
+    color: rgb(191, 26, 81);
+    border-bottom:5px solid rgb(222, 69, 95) ;
+    border-radius: 12px;
+}
+#icon-bar a{
+    margin-left: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#icon-bar a:hover{
+    color: palevioletred;
+}
+.menu-btn{
+    display: none;
+}
+.sidebar a{
+    display: none;
+}
+*/
+
+.features-section {
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 50px
+}
+
+.top-features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.feature {
+  flex: 1;
+  min-width: 200px;
+  max-width: 250px;
+  margin-top: 30px;
+}
+
+.feature img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.feature h4 {
+  color: #d63384;
+  margin-bottom: 8px;
+}
+
+.feature p {
+  font-size: 14px;
+  color: #555;
+}
+
+.bottom-ads {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.ad-box {
+  background-color: #ffe0ec;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  max-width: 500px;
+  flex: 1;
+  flex-direction: row;
+  text-align: left;
+  margin-left: 18px;
+  
+}
+
+.ad-box img {
+  width: 150px;
+  object-fit: cover;
+}
+
+.ad-text {
+  padding: 20px;
+}
+
+.ad-text h4 {
+  margin: 0 0 10px;
+  color: #d63384;
+}
+
+.ad-text p {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 14px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #e91e63;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: #d81b60;
+}

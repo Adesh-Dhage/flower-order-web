@@ -10,8 +10,6 @@
     justify-content: space-around;
     align-items: center ;
     border-bottom: 2px solid black;
-    position: fixed;
-    z-index: 2;
 }
 .website-name{
     font-size: 35px;
@@ -38,8 +36,13 @@
     margin-top:15px;
 
 }
+.icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 #icon-bar{
-    width: 250px;
+    width: 150px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -344,10 +347,11 @@
 @media screen and (max-width: 480px) {
     /* Navbar adjustments */
     .Navbar {
+        display: flex;
         flex-direction:row;
-        height: auto;
-        padding: 15px 10px;
-        gap: 15px;
+        height:50px;
+        padding: 10px 15px;
+        justify-content: space-around;    
     }
 
     .search-bar {
@@ -363,17 +367,34 @@
         margin-top: 10px;
         padding-right: 15px;
     }
-
+    .icons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
     #icon-bar {
         text-align: center;
         display: flex;
+        width: 80px;
+        margin-left: 20px;
+    }
+    #icon-bar a{
+        font-size: 20px;
+        margin-left: 10px;
     }
 
-    #icon-bar a {
-        font-size: 17px;
-    }
     .menu-btn{
+        font-size: 15px;
+    }
+    .sidebar {
+        gap: 2px;
+        height: 40px;
+    }
+    .sidebar a{
+        margin-left: 0;
         font-size: 12px;
+        padding: 0px 4px;
     }
 
     /* Page adjustments */
@@ -463,33 +484,54 @@
 
     /* Adjust Navbar for smaller screens */
     .Navbar {
-        /* flex-wrap: wrap; */
-        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 60px;
         padding: 15px;
         gap: 15px;
     }
 
     .website-name {
-        width: 100%;
+        width: 40%;
         text-align: center;
     }
 
 
     .search-bar {
         width: 75%;
-        order: 2;
     }
-
+    .icons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 250px;
+    }
     #icon-bar {
-        width: 100%;
+        width:80px;
         justify-content: center;
         display: flex;
-        gap: 20px;
-        order: 3;
+        gap: 10px;
     }
 
     #icon-bar a {
+        font-size: 18px;
         margin-left: 0;
+    }
+    .menu-btn{
+        font-size: 17px;
+        margin-left: 0;
+    }
+    .sidebar{
+        gap: 2px;
+        height: 60px;
+        gap: 10px;
+    }
+    .sidebar a{
+        margin-left: 0;
+        font-size: 15px;
+        padding: 0px 4px;
     }
 
     /* Adjust main content layout */

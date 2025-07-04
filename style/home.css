@@ -602,8 +602,8 @@
         align-items: center;
     }
     #icon-bar a {
-        margin: 0 15px;
-        font-size: 25px;
+        margin: 0 10px;
+        font-size: 15px;
     }
      /* Position the menu button relative to its containing element */
         .menu-btn {
