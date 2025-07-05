@@ -1,0 +1,224 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+      background-color: rgb(212, 177, 183);
+}
+
+
+/*  navbar code */
+
+
+.Navbar{
+    height: 70px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center ;
+    position: fixed;
+    border-bottom: 2px solid black;
+}
+.website-name{
+    font-size: 35px;
+    color: rgb(204, 12, 76);
+    font-size: 45px;
+}
+.search-bar{
+    display: flex;
+    position: relative;
+    
+}
+.search-bar input{
+    height: 30px;
+    width: 40vw;
+    padding: 5px 20px;
+    border-radius: 12px;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+.search-bar input:hover{
+    border: 2px solid palevioletred;
+}
+.icon{
+    position: absolute;
+    right: 0;
+    top:auto;
+    padding-right: 35px;
+    margin-top:15px;
+
+}
+#icon-bar{
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#icon-bar a{
+    font-size: 25px;
+    margin-left: 20px;
+}
+.menu-btn {
+            cursor: pointer;
+            display: block;
+            font-size: 25px;
+            margin: 20px;
+            
+        }
+        .sidebar a{
+            display: block;
+            padding: 0 6px;
+            text-decoration: none;
+            color:black;
+            font-size: 20px;
+            margin-left: 30px;
+            transition: 0.5s;
+        }
+         .sidebar a:hover{
+            color:rgb(239, 12, 87);
+            border-bottom: 2px solid rgb(222, 16, 85);
+            border-radius: 12px;
+            
+        }
+
+        /* Sidebar styles */
+        .sidebar {
+            visibility: hidden;
+            opacity: 0;
+            transform: translateY(-100%);
+            transition: transform 0.4s ease, opacity 0.4s ease, visibility  0.4s;
+
+            position:fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            padding: 20px 0;
+            background-color: white;
+        }
+
+        .menu-btn:hover .sidebar {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0);
+            transition-delay:  0.5s; }
+
+
+.main-heading{
+    text-align: center;
+    font-size: 55px;
+    font-weight: 200;
+    letter-spacing: 1.3px;
+   
+
+}
+
+.card-container{
+      display: flex;
+      flex-wrap: wrap; 
+      flex-direction: row;     
+}
+
+.card{
+    height: 350px;
+    width: 300px;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 9px;
+    box-shadow: 10px 20px 50px #000000;
+    margin: 35px;
+}
+
+.image-container{
+    height: 65%;
+    width: 100%;
+    background-color: rgb(131, 118, 118);
+}
+
+.image-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-info-container h3{
+      font-size: 25px; 
+      text-align: center; 
+      gap: 15px;
+}
+.btn-container{
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+}
+
+.btn{
+    background-color: rgb(162, 55, 73);
+   padding: 15px 0;
+    cursor: pointer;
+    border:5px solid white;
+    font-size: 19px;
+}
+
+#footer{
+    background-color: white;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#resource{
+    height: 95%;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+#connect{
+    height: 95%;
+    width: 300px;
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    font-size: 20px;
+}
+#connect-icons {
+    height: 40px;
+    width: 100%;
+}
+#connect-icons a{
+    margin-left: 20px;
+    font-size: 20px;
+}
+#need-help{
+    margin-top: 40px;
+    height: 95%;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    font-size: 20px;
+}
+
+@media screen and (width:200px) {
+    body{
+        background-color: blueviolet;
+    }
+}
